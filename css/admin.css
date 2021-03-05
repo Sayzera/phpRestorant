@@ -1,0 +1,313 @@
+/*
+    Author: Sezer Bölük;
+    Theme: Food Order Website Admin;
+    Version: 1.0;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    padding: 1%;
+    width: 90%;
+    margin: 10px auto;
+    
+}
+
+
+/** Menu  */
+
+.menu .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menu .wrapper {
+    border-bottom: 1px solid #576574;
+}
+
+.menu .wrapper ul {
+    display: flex;
+    padding: 20px 0;
+    list-style: none;
+}
+.menu .wrapper ul li a {
+    text-decoration: none;
+    color: #ff6b6b
+}
+.menu .wrapper ul li a:hover {
+   opacity: 0.5;
+   color: #0abde3;
+   transition: all .5s ease;
+}
+.menu .wrapper ul li {
+    margin-left: 20px;
+}
+
+/* main-content */
+.main-content {
+    width: 100%;
+    background-color: #c8d6e5;
+
+}
+
+.main-content .wrapper {
+    display: grid;
+    min-height: 400px;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+
+    justify-items: center;
+    align-items: center;
+    
+    justify-content: center;
+    align-content: center;
+
+
+    
+}
+
+.main-content .wrapper div {
+    padding: 100px;
+    background:white;
+}
+
+.main-content .wrapper div > * {
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+
+
+.text-center {
+    text-align: center  ;
+    color: white
+}
+
+/*css foor footer*/
+.footer {
+background-color: #ff6b6b;
+}
+
+
+
+
+/** Manage Admin */
+.manage-content {
+    width: 90%;
+    margin: 0 auto;
+    
+
+}
+.manage-content .wrapper {
+    display:grid;
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.tbl-full {
+    width: 100%;
+}
+
+
+table tr th {
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+
+table tr td {
+    padding: 1%;
+}
+
+.btn-primary {
+    background-color: #0abde3;
+    width: 9%;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.btn-secondary {
+    background-color: #7bed9f;
+    width: 9%;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    width: 9%;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.btn-primary:hover {
+    background-color:#5f27cd;
+}
+
+.btn-danger:hover {
+    background-color:#5f27cd;
+}
+
+.btn-secondary:hover {
+    background-color:#5f27cd;
+}
+
+.container {
+    min-height: 300px;
+    width: 100%;
+    background-color: #C8D6E5;
+}
+
+.container .wrapper-add-admin {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    height: 300px;
+
+    align-content: center;
+    justify-content: center;
+}
+
+table tr td {
+    padding-left: 50px;
+}
+
+.delete_cart {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 50%);
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.delete_cart div {
+    border-radius: 20px;
+    background: white;
+    text-align: center;
+
+    padding: 100px;
+
+    font-weight: bold;
+    
+}
+
+.login {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    background: red;
+    grid-gap: 10px;
+    
+    align-items: center;
+    justify-items: center;
+}
+
+.login > * {
+    margin: 1px ;
+    background: white;
+    padding: 100px  ;
+
+}
+
+
+
+
+.body {
+    height: 100vh;
+    background-color: #111111;
+    display: grid;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.center {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+.center h1  {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.text-field {
+    margin: 30px 0;
+    position: relative;
+
+}
+.text-field input {
+    width: 100%;
+    height: 30px;
+    border:none;
+    outline: none;
+    
+}
+.text-field label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    outline: none;
+}
+
+
+.text-field span {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+}
+
+.pass {
+    font-size: 16px;
+    color: silver;
+    margin: 10px 0;
+    position: relative;
+}
+
+.btn {
+   
+    border-radius: 25px;
+    height: 50px;
+    width: 100px;
+    border:1px solid #2691d9;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    outline: none;
+    cursor: pointer;
+}
