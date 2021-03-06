@@ -1,8 +1,8 @@
 <?php
-if(!isset($_SESSION['kullanici_bilgileri'])) {  header('location:'.SITEURL.'admin/login.php');}
 
 include ('./partials/menu.php');
 $db = include('./database/db.php');
+if(!isset($_SESSION['kullanici_bilgileri'])) {  header('location:'.SITEURL.'admin/login.php');}
 
 isset($_GET['id']) ? $id = $_GET['id'] : $id = ''; 
 

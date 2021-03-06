@@ -42,7 +42,7 @@
             <div class="body">
                 <div class="center">
                     <?php
-                    if ($_SESSION['kullanici_bilgileri']) {
+                    if (isset($_SESSION['kullanici_bilgileri'])) {
                         echo 'Başarıyla giriş yaptınız yönlendiriliyorsunuz...';
                         header('Refresh:2; url=' . SITEURL . 'admin/manage-admin.php');
                     }
@@ -57,7 +57,7 @@
             <div class="body">
                 <div class="center">
                     <?php
-                    if ($_SESSION['kullanici_bilgileri']) {
+                    if (!isset($_SESSION['kullanici_bilgileri'])) {
                         echo 'Kullanıcı Bulunamadı';
                         header('Refresh:1; url=' . SITEURL . 'admin/login.php');
                     }
