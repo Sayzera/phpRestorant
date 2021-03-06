@@ -15,7 +15,6 @@ $food = $db->query('SELECT * FROM tbl_food')->fetchAll();
 
 ?>
 
-
     <!--Main content section starts -->
     <div class="main-content">
       

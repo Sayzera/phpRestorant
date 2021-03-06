@@ -92,7 +92,6 @@ if(isset($_POST['add_category_submit'])) {
 
 
 
-
     // Resim ekleme 
     $target_dir = '../images/';
     // dosyanın yolunu veriyorum
