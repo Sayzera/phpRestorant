@@ -1,6 +1,6 @@
 <?php 
 session_start();
-define('SITEURL','http://localhost/');
+define('SITEURL','https://restoran12.herokuapp.com/');
 
 
 try {
